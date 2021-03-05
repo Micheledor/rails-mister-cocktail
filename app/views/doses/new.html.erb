@@ -1,7 +1,6 @@
-<h2>Edit <%= @cocktail.name %></h2>
-
-<%= simple_form_for [ @cocktail, @dose ], url: cocktail_doses_path do |f| %>
+<h3>Add a new dose</h3>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.association :ingredient, collection: Ingredient.order(:name), prompt: "Choose your ingredient" %>
   <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.submit "Add recipe", class: "btn btn-primary" %>
+  <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>

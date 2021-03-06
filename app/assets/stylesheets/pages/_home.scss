@@ -23,4 +23,9 @@ img {
 .card-text > a {
   text-decoration: none;
   font-size: 30px;
+  color: rgb(172, 89, 187);
+}
+
+.card-text > a:hover {
+  color:blue
 }

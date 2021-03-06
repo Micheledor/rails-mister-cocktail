@@ -4,8 +4,14 @@
     <div class="cocktail-card">
       <div class="card-text"> 
         <%= link_to cocktail.name, cocktail_path(cocktail), {:style=>'text-align: center;', :class => "css_class"}%>
+        <% if cocktail.photo.attached? %>
+          <div class="card-category"> <%= cl_image_tag cocktail.photo.key, width: 400, height: 300, crop: :fill %></div>
+       <% else %>
+          <div class="card-category"> <img src="https://previews.123rf.com/images/dbelashova/dbelashova1609/dbelashova160900189/62815611-cocktail-icon-outline-vector-contour-isolated-on-white-background.jpg" width="400" height="300"></div>
+       <% end %>
       </div>
-      <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
     </div>
   <% end %>
 </div>
+
+

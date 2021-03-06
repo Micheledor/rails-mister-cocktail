@@ -1,5 +1,9 @@
 <div class="container">
+<% if @cocktail.photo.attached? %>
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 300, crop: :fill %>')">
+  <% else %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://previews.123rf.com/images/polyudova/polyudova1704/polyudova170400064/77028714-alcoholic-cocktail-hand-drawn-vector-illustration-vintage-cocktail-icon-with-ice-and-leaves-of-mint-.jpg)">
+       <% end %>
   <h1><%= @cocktail.name %></h1>
       <h3>Recipe</h3>
       <h4>Ingredient<h4>
@@ -18,3 +22,5 @@
 </div>
 </div>
 </div>
+
+

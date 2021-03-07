@@ -1,10 +1,8 @@
 .form-new {
-  
   padding: 5%;
-  
   margin: auto;
   width: 50%;
-  border: 3px solid coral;
+  border: 3px solid #f87e6f;
   padding: 10px;
   margin-top: 20px;
 }
@@ -15,4 +13,12 @@
 
 .form-container {
   display: contents;  
+}
+
+.header-index {
+  padding: 60px;
+  text-align: center;
+  background: #252e55;
+  color: white;
+  font-size: 30px;
 }

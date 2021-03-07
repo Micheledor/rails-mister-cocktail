@@ -1,3 +1,41 @@
-img {
-  object-fit: cover;  
+.pic-container > img {
+  object-fit: fill;
+  object-position: center;
+  margin: auto;
+}
+
+.container-doses {
+  object-position: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid #252e55;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.show-ingredients {
+  text-align: center;
+  object-position: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+.pic-container {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.container-doses > h1 {
+  text-align: center;
+  object-position: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
